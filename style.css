@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "Inter";
+    src: url("./fonts/Inter-VariableFont_slnt,wght.woff2") format("woff2"),
+         url("./fonts/Inter-VariableFont_slnt,wght.woff") format("woff");
+    font-weight: 100 900; 
+    font-style: normal;
+    font-display: swap;
+}
+
+
+:root {
+    --Green: hsl(75, 94%, 57%);
+    --White: hsl(0, 0%, 100%);
+    --Grey-700: hsl(0, 0%, 20%);
+    --Grey-800: hsl(0, 0%, 12%);
+    --Grey-900: hsl(0, 0%, 8%);
+
+
+     --font-main: "Inter", sans-serif;
+ 
+}
+
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+body {
+    font-size: 1.6rem;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--Grey-900);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-card {
+    font-family: var(--font-main);
+    background-color: var(--Grey-800);
+    color: var(--White);
+    width: 95%;
+    max-width: 35rem;
+    padding: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.6rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.avatar {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.location{
+    color: var(--Green);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: .5rem;
+
+}
+.position {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+
+.social-links {
+  display: block;  
+  width: 100%;                 
+  max-width: 30rem;            
+  font-family: var(--font-main);
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 1.2rem 2rem;
+  background-color: var(--Grey-700);
+  color: var(--White);
+  text-decoration: none;
+  border-radius: .5rem;
+  text-align: center;
+  transition: background-color 0.4s ease, color 0.4s ease;
+  }
+
+.social-links:hover{
+    color: var(--Grey-900);
+    background-color: var(--Green);
+    }
+
+
+.attribution{
+    background-color: var(--Grey-900);
+    font-family: var(--font-main);
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--White);
+    padding-bottom: 5px;
+}
+    
